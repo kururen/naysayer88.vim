@@ -4,21 +4,22 @@
 set background=dark
 
 highlight clear
-if exists("syntax_on")
-	syntax reset
-endif
+"if exists("syntax_on")
+"	syntax reset
+"endif
 
 let g:colors_name="naysayer88"
 
 highlight! Default guifg=#d6b48b guibg=#042327 gui=NONE
-highlight! Normal guifg=#d6b48b guibg=#042327 gui=NONE
+highlight! Normal  guifg=#d6b48b guibg=#042327 gui=NONE
+highlight! Comment guifg=#31B72C guibg=NONE    gui=NONE
+highlight! link Todo Comment
 
-highlight! Comment guifg=#31B72C guibg=NONE gui=NONE
-
-highlight! link Constant Statement
 highlight! String guifg=#2ca198 guibg=NONE gui=NONE
-highlight! link Character Number
+
 highlight! Number guifg=#70c5bf guibg=NONE gui=NONE
+
+highlight! link Character Number
 highlight! link Boolean Number
 highlight! link Float Number
 
@@ -26,20 +27,20 @@ highlight! link Identifier Default
 "highlight! link Function Default
 
 highlight! Statement guifg=#ffffff guibg=NONE gui=NONE
+highlight! link Constant Statement
 "highlight! link Conditional Statement
 "highlight! link Repeat Statement
 "highlight! link Label Statement
+
 highlight! link Operator Default
 "highlight! link Keyword Statement
 "highlight! link Exception Statement
 
-highlight! PreProc guifg=#9DE3C0 guibg=NONE gui=NONE
-"highlight link Include PreProc
-"highlight link Define PreProc
-"highlight link Macro PreProc
-"highlight link PreCondit PreProc
+highlight! Type guifg=#9DE3C0 guibg=NONE gui=NONE
+"highlight link Include Type
+"highlight link Define Type
+"highlight link Macro Type
 
-highlight! link Type PreProc
 "highlight! link StorageClass Type
 "highlight! link Structure Type
 "highlight! link Typedef Type
@@ -57,27 +58,23 @@ highlight Underlined guifg=#af5f5f guibg=NONE gui=NONE
 
 "highlight Error guifg=#af5f5f guibg=NONE gui=NONE
 
-highlight! link Todo Comment
 
-highlight link Title Default
+highlight! link Title Default
 "highlight htmlStatement guifg=#878787 guibg=NONE gui=NONE
 "highlight htmlItalic guifg=#dfaf87 guibg=NONE gui=NONE
 "highlight htmlArg guifg=#875f5f guibg=NONE gui=NONE
 "highlight cssIdentifier guifg=#dfaf87 guibg=NONE gui=NONE
 "highlight cssClassName guifg=#dfaf87 guibg=NONE gui=NONE
 
-" C#
-highlight! link csEndColon Default
-highlight! link csLogicSymbols Default
-
 " Window UI
-highlight Cursor                     guifg=#000000       guibg=#dfdfaf      gui=NONE
-highlight MoreMsg                    guifg=#dfaf87       guibg=NONE         gui=NONE
-highlight Visual                     guifg=#dfdfaf       guibg=#888888      gui=NONE
-highlight Question                   guifg=#875f5f       guibg=NONE         gui=NONE
-highlight Search                     guifg=#dfdfaf       guibg=#878787      gui=NONE
-highlight PmenuSel                   guifg=#dfdfaf       guibg=#875f5f      gui=NONE
-highlight MatchParen                 guifg=#dfdfaf       guibg=#875f5f      gui=NONE
-highlight VertSplit                  guifg=#000000       guibg=NONE         gui=NONE
-highlight! EndOfBuffer               guifg=#042327       guibg=#042327      gui=NONE
+highlight! Cursor      guifg=#000000  guibg=#dfdfaf  gui=NONE
+highlight! MoreMsg     guifg=#dfaf87  guibg=NONE     gui=NONE
+highlight! Visual      guifg=#dfdfaf  guibg=#888888  gui=NONE
+highlight! Question    guifg=#875f5f  guibg=NONE     gui=NONE
+highlight! Search      guifg=#dfdfaf  guibg=#878787  gui=NONE
+highlight! Pmenu       guifg=#dfdfaf  guibg=#986f7f  gui=NONE
+highlight! PmenuSel    guifg=#dfdfaf  guibg=#875f5f  gui=NONE
+highlight! MatchParen  guifg=#dfdfaf  guibg=#875f5f  gui=NONE
+highlight! VertSplit   guifg=#000000  guibg=NONE     gui=NONE
+highlight! EndOfBuffer guifg=#042327  guibg=#042327  gui=NONE
 
